@@ -30,8 +30,9 @@ The application requires the following environment variables to be set:
    ```
 2. Install the dependencies:
    ```
-   cd task
-   npm install
+   cd -skinport-price-tracker
+   cp .env.example .env
+   npm install #I recommend pnpm
    ```
 3. Create a `.env` file in the root of the project and add the necessary environment variables:
    ```
