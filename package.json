@@ -1,0 +1,46 @@
+{
+  "name": "@skinport/price-tracker",
+  "version": "1.0.0",
+  "description": "A backend web server that provides an API to fetch and cache item prices from the SkinPort marketplace. The server is built using TypeScript, PostgreSQL (without an ORM), and the Fastify framework. Users can retrieve the minimum prices for tradable and non-tradable items, as well as update the balance of a specific user.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thezathe/-skinport-price-tracker.git"
+  },
+  "keywords": [
+    "fastify",
+    "typescript",
+    "postgres"
+  ],
+  "author": "Uchkun Rakhimov <uchkunrakhimov@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thezathe/-skinport-price-tracker/issues"
+  },
+  "homepage": "https://github.com/thezathe/-skinport-price-tracker#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "fastify": "^4.27.0",
+    "node-cache": "^5.1.2",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/pg": "^8.11.6",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.0",
+    "nodemon": "^3.1.3",
+    "prettier": "^3.3.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.1.4"
+  }
+}
