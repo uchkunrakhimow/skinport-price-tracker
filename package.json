@@ -2,7 +2,7 @@
   "name": "@skinport/price-tracker",
   "version": "1.0.0",
   "description": "A backend web server that provides an API to fetch and cache item prices from the SkinPort marketplace. The server is built using TypeScript, PostgreSQL (without an ORM), and the Fastify framework. Users can retrieve the minimum prices for tradable and non-tradable items, as well as update the balance of a specific user.",
-  "main": "dist/index.js",
+  "main": "dist/server.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
