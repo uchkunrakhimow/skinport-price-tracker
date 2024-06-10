@@ -2,8 +2,8 @@ import { FastifyReply, FastifyRequest } from 'fastify';
 import NodeCache from 'node-cache';
 import axios, { AxiosError } from 'axios';
 
-import { config } from '@/config';
-import { SkinportItem } from '@/types';
+import { config } from '../config';
+import { SkinportItem } from '../types';
 
 // Create a cache instance with a TTL (Time-To-Live) of 60 seconds
 const cache = new NodeCache({ stdTTL: config.cache.duration });

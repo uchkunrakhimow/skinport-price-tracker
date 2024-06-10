@@ -1,7 +1,7 @@
 import { FastifyReply, FastifyRequest } from 'fastify';
 
-import { pool } from '@/db';
-import { WithdrawRequest } from '@/types';
+import { pool } from '../db';
+import { WithdrawRequest } from '../types';
 
 /**
  * Endpoint handler to withdraw funds from a user's balance

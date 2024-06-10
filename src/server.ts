@@ -1,6 +1,6 @@
 import fastify, { FastifyInstance } from 'fastify';
-import { itemsRoutes } from '@/routes/itemsRoutes';
-import { userRoutes } from '@/routes/userRoutes';
+import { itemsRoutes } from './routes/itemsRoutes';
+import { userRoutes } from './routes/userRoutes';
 
 const app: FastifyInstance = fastify();
 
