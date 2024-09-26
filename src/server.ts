@@ -1,8 +1,12 @@
 import fastify, { FastifyInstance } from 'fastify';
-import { itemsRoutes } from './routes/itemsRoutes';
-import { userRoutes } from './routes/userRoutes';
+import { itemsRoutes } from '@/routes/itemsRoutes';
+import { userRoutes } from '@/routes/userRoutes';
 
 const app: FastifyInstance = fastify();
+
+app.get('/', async (request, reply) => {
+  return { message: 'Happy coding!' };
+});
 
 // Register routes
 itemsRoutes(app);

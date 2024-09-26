@@ -13,6 +13,6 @@ export const config = {
     duration: parseInt(process.env.CACHE_DURATION!),
   },
   skinport: {
-    apiUrl: process.env.SKINPORT_API_URL!,
+    apiUrl: 'https://api.skinport.com/v1/items',
   },
 };

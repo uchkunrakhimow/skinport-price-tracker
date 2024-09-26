@@ -2,8 +2,8 @@ import { FastifyReply, FastifyRequest } from 'fastify';
 import NodeCache from 'node-cache';
 import axios, { AxiosError } from 'axios';
 
-import { config } from '../config';
-import { SkinportItem } from '../types';
+import { config } from '@/config';
+import { SkinportItem } from '@/types';
 
 // Create a cache instance with a TTL (Time-To-Live) of 60 seconds
 const cache = new NodeCache({ stdTTL: config.cache.duration });
@@ -32,8 +32,8 @@ export const getItems = async (
     const items = response.data.map(
       (item: any): SkinportItem => ({
         name: item.market_hash_name,
-        tradeableMinPrice: item.min_price,
-        nonTradeableMinPrice: item.min_price,
+        tradeableMinPrice: item.min_price_tradeable, // предположим, есть min_price_tradeable
+        nonTradeableMinPrice: item.min_price_non_tradeable, // предположим, есть min_price_non_tradeable
         appId: item.app_id,
         currency: item.currency,
       }),
